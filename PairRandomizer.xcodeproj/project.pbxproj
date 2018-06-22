@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		063A582920DD4CF100FEABC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A582820DD4CF100FEABC5 /* AppDelegate.swift */; };
-		063A582B20DD4CF100FEABC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A582A20DD4CF100FEABC5 /* ViewController.swift */; };
 		063A582E20DD4CF100FEABC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 063A582C20DD4CF100FEABC5 /* Main.storyboard */; };
 		063A583020DD4CF300FEABC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 063A582F20DD4CF300FEABC5 /* Assets.xcassets */; };
 		063A583320DD4CF300FEABC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 063A583120DD4CF300FEABC5 /* LaunchScreen.storyboard */; };
+		063A584020DD532700FEABC5 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A583F20DD532700FEABC5 /* Person.swift */; };
+		063A584220DD537700FEABC5 /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A584120DD537700FEABC5 /* PersonController.swift */; };
+		063A584420DD574C00FEABC5 /* PersonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A584320DD574C00FEABC5 /* PersonTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		063A582520DD4CF100FEABC5 /* PairRandomizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PairRandomizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		063A582820DD4CF100FEABC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		063A582A20DD4CF100FEABC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		063A582D20DD4CF100FEABC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		063A582F20DD4CF300FEABC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		063A583220DD4CF300FEABC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		063A583420DD4CF300FEABC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		063A583F20DD532700FEABC5 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		063A584120DD537700FEABC5 /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
+		063A584320DD574C00FEABC5 /* PersonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,56 @@
 		063A582720DD4CF100FEABC5 /* PairRandomizer */ = {
 			isa = PBXGroup;
 			children = (
-				063A582820DD4CF100FEABC5 /* AppDelegate.swift */,
-				063A582A20DD4CF100FEABC5 /* ViewController.swift */,
-				063A582C20DD4CF100FEABC5 /* Main.storyboard */,
-				063A582F20DD4CF300FEABC5 /* Assets.xcassets */,
-				063A583120DD4CF300FEABC5 /* LaunchScreen.storyboard */,
-				063A583420DD4CF300FEABC5 /* Info.plist */,
+				063A583E20DD4D7100FEABC5 /* UI */,
+				063A583D20DD4D4500FEABC5 /* ViewController */,
+				063A583C20DD4D3A00FEABC5 /* ModelController */,
+				063A583B20DD4D0F00FEABC5 /* Resources */,
+				063A583A20DD4D0100FEABC5 /* Model */,
 			);
 			path = PairRandomizer;
+			sourceTree = "<group>";
+		};
+		063A583A20DD4D0100FEABC5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				063A583F20DD532700FEABC5 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		063A583B20DD4D0F00FEABC5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				063A582820DD4CF100FEABC5 /* AppDelegate.swift */,
+				063A582F20DD4CF300FEABC5 /* Assets.xcassets */,
+				063A583420DD4CF300FEABC5 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		063A583C20DD4D3A00FEABC5 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				063A584120DD537700FEABC5 /* PersonController.swift */,
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		063A583D20DD4D4500FEABC5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				063A584320DD574C00FEABC5 /* PersonTableViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		063A583E20DD4D7100FEABC5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				063A582C20DD4CF100FEABC5 /* Main.storyboard */,
+				063A583120DD4CF300FEABC5 /* LaunchScreen.storyboard */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +181,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				063A582B20DD4CF100FEABC5 /* ViewController.swift in Sources */,
+				063A584420DD574C00FEABC5 /* PersonTableViewController.swift in Sources */,
+				063A584020DD532700FEABC5 /* Person.swift in Sources */,
+				063A584220DD537700FEABC5 /* PersonController.swift in Sources */,
 				063A582920DD4CF100FEABC5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +330,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QE6MX92YZ5;
-				INFOPLIST_FILE = PairRandomizer/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PairRandomizer/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QE6MX92YZ5;
-				INFOPLIST_FILE = PairRandomizer/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PairRandomizer/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
